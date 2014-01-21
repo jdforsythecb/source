@@ -1,0 +1,16 @@
+#Enable Rewriting
+RewriteEngine On
+
+# Rewrite user URLs
+#	Input: settings/
+#	Output: settings.php
+
+
+#RewriteRule ^home$ /index.php?load=home
+RewriteRule ^settings$ /index.php?load=settings
+RewriteRule ^users$ /index.php?load=users
+RewriteRule ^reports$ /index.php?load=reports
+RewriteRule ^donate$ /index.php?load=donate
+
+
+ErrorDocument 404 /views/404.php
