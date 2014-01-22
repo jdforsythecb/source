@@ -62,7 +62,7 @@ Days before transaction to send me an email notice
 
 $db = new MEODB(DBPrivileges::READ);
 
-$db->select("* FROM `churches`");
+$db->safeSelect("* FROM `churches`");
 
 if($db->result->num_rows > 0) {
 	
