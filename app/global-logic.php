@@ -3,12 +3,7 @@
 	
 	
 	// ERROR HANDLING CLASS
-	final class HandleErrors {
-		static public function showError($msg) {
-			echo('<script type="text/javascript">console.log("' . $msg . '");</script>') or die($msg);
-			exit();
-		}
-		
+	final class HandleErrors {		
 		static public function consoleLog($msg) {
 			echo '<script type="text/javascript">console.log("' . $msg . '");</script>';
 		}
